@@ -4,6 +4,7 @@ class MiFooter
     this.innerHTML = /* html */
       `<p>
         &copy; 2021
+        
         Pichardo Vilchis Alfonso.
       </p>`;
   }
