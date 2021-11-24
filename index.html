@@ -88,7 +88,15 @@
           <span class="mdl-layout-title">Sesion</span>
           <div class="mdl-layout-spacer"></div>
           <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
-            
+            <div class="herramientas">
+                <mi-nav></mi-nav>
+                <button
+                  type="button"
+                  name="terminarSesión">
+                  Terminar Sesión
+                </button>
+
+              </div>
           </div>
         </div>
       </header>
@@ -101,42 +109,39 @@
                 
               Aplicacion Web
             </div>
-            <form name="forma">
-              <mi-nav></mi-nav>
-              <header>
-                <h1>Sesión</h1>
-                <div class="herramientas">
-                  <button
-                    type="button"
-                    name="terminarSesión">
-                    Terminar Sesión
-                  </button>
-                </div>
-              </header>
-              <figure>
-                <img id="avatar" src=""
-                  alt="Avatar">
-              </figure>
-              <p>
-                <label>
-                  Email
-                  <output name="email">
-                    <mi-progreso>
-                    </mi-progreso>
-                  </output>
-                </label>
-              </p>
-              <p>
-                <label>
-                  Nombre
-                  <output name="nombre">
-                    <mi-progreso>
-                    </mi-progreso>
-                  </output>
-                </label>
-              </p>
-              <mi-footer></mi-footer>
-            </form>
+            <h4><center> Sesion <center> </h4>
+              <!-- 
+              INICIO DE TODO
+              -->
+              <form name="forma">    
+                <figure>
+                  <img id="avatar" src=""
+                    alt="Avatar">
+                </figure>
+                <p>
+                  <label>
+                    Email
+                    <output name="email">
+                      <mi-progreso>
+                      </mi-progreso>
+                    </output>
+                  </label>
+                </p>
+                <p>
+                  <label>
+                    Nombre
+                    <output name="nombre">
+                      <mi-progreso>
+                      </mi-progreso>
+                    </output>
+                  </label>
+                </p>
+                <mi-footer></mi-footer>
+              </form>
+              
+              <script type="module"
+              src="js/CtrlSesion.js">
+              </script>
             
     
 
@@ -146,7 +151,7 @@
           <div class="mdl-mini-footer--left-section">
             <ul class="mdl-mini-footer--link-list">
               
-             <mi-footer></mi-footer>
+             <mi-footer>Pichardo Vilchis Alfonso</mi-footer>
 
             </ul>
           </div>
