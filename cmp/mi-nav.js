@@ -13,7 +13,6 @@ class MiNav extends HTMLElement {
   connectedCallback() {
     this.innerHTML = /* html */
       `<ul>
-        <li>
           <a href="index.html">
             Sesión</a>
         </li>
@@ -40,10 +39,10 @@ class MiNav extends HTMLElement {
            * para clientes. */
           if (roles.has("Cliente")) {
             html += /* html */
-              `<li>
+              `
                 <a href=
                   "chat.html">Chat</a>
-              </li>`;
+              `;
           }
           /* Enlaces para solo
            * administradores.
@@ -51,12 +50,10 @@ class MiNav extends HTMLElement {
           if (roles.has(
             "Administrador")) {
             html += /* html */
-              `<li>
+              `
                 <a href="alumnos.html">Alumnos</a>
-              </li>
-              <li>
                 <a href="usuarios.html">Usuarios</a>
-              </li>`;
+              `;
           }
           this.ul.innerHTML += html;
         }
