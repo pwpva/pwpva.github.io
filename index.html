@@ -88,15 +88,6 @@
           <span class="mdl-layout-title">Sesion</span>
           <div class="mdl-layout-spacer"></div>
           <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
-            <div class="herramientas">
-                <mi-nav></mi-nav>
-                <button
-                  type="button"
-                  name="terminarSesión">
-                  Terminar Sesión
-                </button>
-
-              </div>
           </div>
         </div>
       </header>
@@ -113,7 +104,18 @@
               <!-- 
               INICIO DE TODO
               -->
-              <form name="forma">    
+              <form name="forma">
+                
+                <header>
+                  <h1>Sesión</h1>
+                  <div class="herramientas">
+                    <button
+                      type="button"
+                      name="terminarSesión">
+                      Terminar Sesión
+                    </button>
+                  </div>
+                </header>
                 <figure>
                   <img id="avatar" src=""
                     alt="Avatar">
@@ -136,8 +138,9 @@
                     </output>
                   </label>
                 </p>
-                <mi-footer></mi-footer>
+                
               </form>
+              <mi-nav></mi-nav>
               
               <script type="module"
               src="js/CtrlSesion.js">
@@ -151,7 +154,7 @@
           <div class="mdl-mini-footer--left-section">
             <ul class="mdl-mini-footer--link-list">
               
-             <mi-footer>Pichardo Vilchis Alfonso</mi-footer>
+             <mi-footer></mi-footer>
 
             </ul>
           </div>
