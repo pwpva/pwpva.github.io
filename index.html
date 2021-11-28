@@ -1,6 +1,7 @@
 <!doctype html>
-<html lang="en">
-  <head>
+<!--
+  AQUI VAN LOS ELEMENTOS IMPORTADOS
+-->
     <!--
     Carga el núcleo de Firebase
     JS SDK
@@ -38,11 +39,16 @@
 <script type="module"
   src="cmp/mi-progreso.js">
   </script>
+<!--
+  Configura la plantilla
+-->
+<html lang="en">
+  <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <title>Aplicacion Web</title>
+    <title>Proyecto Sesion</title>
 
     <!-- Add to homescreen for Chrome on Android -->
     <meta name="mobile-web-app-capable" content="yes">
@@ -85,9 +91,16 @@
     <div class="demo-layout mdl-layout mdl-layout--fixed-header mdl-js-layout mdl-color--grey-100">
       <header class="demo-header mdl-layout__header mdl-layout__header--scroll mdl-color--grey-100 mdl-color-text--grey-800">
         <div class="mdl-layout__header-row">
-          <span class="mdl-layout-title">Sesion</span>
+          <span class="mdl-layout-title">Proyecto Sesion </span>
           <div class="mdl-layout-spacer"></div>
           <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
+            <label class="mdl-button mdl-js-button mdl-button--icon" for="search">
+              <i class="material-icons">search</i>
+            </label>
+            <div class="mdl-textfield__expandable-holder">
+              <input class="mdl-textfield__input" type="text" id="search">
+              <label class="mdl-textfield__label" for="search">Enter your query...</label>
+            </div>
           </div>
         </div>
       </header>
@@ -97,68 +110,59 @@
           <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
           <div class="demo-content mdl-color--white mdl-shadow--4dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col">
             <div class="demo-crumbs mdl-color-text--grey-500">
-                
-              Aplicacion Web
+              Proyecto 801
             </div>
-            <h4><center> Sesion <center> </h4>
-              <!-- 
-              INICIO DE TODO
-              -->
-              <form name="forma">
-                <center>
-                <header>
-                  <div class="herramientas">
-                    <button
-                      type="button"
-                      name="terminarSesión">
-                      Terminar Sesión
-                    </button>
-                  </div>
-                </header>
-                <figure>
-                  <img id="avatar" src=""
-                    alt="Avatar">
-                </figure>
-                <p>
-                  <label>
-                    Email
-                    <output name="email">
-                      <mi-progreso>
-                      </mi-progreso>
-                    </output>
-                  </label>
-                </p>
-                <p>
-                  <label>
-                    Nombre
-                    <output name="nombre">
-                      <mi-progreso>
-                      </mi-progreso>
-                    </output>
-                  </label>
-                </p>
-                
-              </form>
-              <mi-nav></mi-nav>
-            </center>
-              
-              <script type="module"
-              src="js/CtrlSesion.js">
-              </script>
-            
-    
+            <br>
+            <!--Aqui va todo -->
 
+            <form name="forma">
+              <center>
+              <header>
+                <div class="herramientas">
+                  <button
+                    type="button"
+                    name="terminarSesión">
+                    Terminar Sesión
+                  </button>
+                </div>
+              </header>
+              <figure>
+                <img id="avatar" src=""
+                  alt="Avatar">
+              </figure>
+              <p>
+                <label>
+                  Email
+                  <output name="email">
+                    <mi-progreso>
+                    </mi-progreso>
+                  </output>
+                </label>
+              </p>
+              <p>
+                <label>
+                  Nombre
+                  <output name="nombre">
+                    <mi-progreso>
+                    </mi-progreso>
+                  </output>
+                </label>
+              </p>
+              
+            </form>
+            <mi-nav></mi-nav>
+          </center>
+            
+            <script type="module"
+            src="js/CtrlSesion.js">
+            </script>
+          
           </div>
         </div>
         <footer class="demo-footer mdl-mini-footer">
-          <div class="mdl-mini-footer--left-section">
-            <ul class="mdl-mini-footer--link-list">
-              
-             <mi-footer></mi-footer>
-
-            </ul>
-          </div>
+          ponchito
         </footer>
-                  
+      </main>
+    </div>
   </body>
 </html>
