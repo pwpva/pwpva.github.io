@@ -2,6 +2,39 @@
 <!--
   ELEMENTOS DE FUNCION
 -->
+  <script
+  src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js">
+  </script>
+  <!--
+  Agrega el manejo de
+  autenticación.
+  -->
+  <script
+  src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js">
+  </script>
+  <!--
+  Agrega el manejo de bases de
+  datos.
+  -->
+  <script
+  src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js">
+  </script>
+  <!--
+  Configura la app usando la
+  información del sitio de
+  Firebase.
+  -->
+  <script src="js/init.js">
+  </script>
+  <script type="module"
+  src="cmp/mi-nav.js">
+  </script>
+  <script type="module"
+  src="cmp/mi-footer.js">
+  </script>
+  <script type="module"
+  src="cmp/mi-progreso.js">
+  </script>
 <!--
 Plantilla y sus elementos
 -->
@@ -76,11 +109,44 @@ Plantilla y sus elementos
               Proyecto de Sesión
             </div>
             <!--AQUI VA TODO-->
+            
+            <form name="forma">    
+              <figure>
+                <img id="avatar" src=""
+                  alt="Avatar">
+              </figure>
+              <p>
+                <label>
+                  Email
+                  <output name="email">
+                    <mi-progreso>
+                    </mi-progreso>
+                  </output>
+                </label>
+              </p>
+              <p>
+                <label>
+                  Nombre
+                  <output name="nombre">
+                    <mi-progreso>
+                    </mi-progreso>
+                  </output>
+                </label>
+              </p>
+              
+              <center><mi-nav></mi-nav></center>
+            </form>
+            
+            <script type="module"
+            src="js/CtrlSesion.js">
+            </script>   
+
           </div>
         </div>
         <footer class="demo-footer mdl-mini-footer">
           <div class="mdl-mini-footer--left-section">
             <!--FOOTER-->
+            <mi-footer></mi-footer>
           </div>
         </footer>
       </main>
