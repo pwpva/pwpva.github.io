@@ -14,7 +14,7 @@ class MiNav extends HTMLElement {
     this.innerHTML = /* html */
       `<ul>
           <a href="index.html">
-            Sesión</a>
+              Sesión  </a>
         </li>
       </ul>`;
     this.ul =
@@ -41,7 +41,7 @@ class MiNav extends HTMLElement {
             html += /* html */
               `
                 <a href=
-                  "chat.html">Chat</a>
+                  "chat.html">  Chat  </a>
               `;
           }
           /* Enlaces para solo
@@ -51,8 +51,8 @@ class MiNav extends HTMLElement {
             "Administrador")) {
             html += /* html */
               `
-                <a href="alumnos.html">Alumnos</a>
-                <a href="usuarios.html">Usuarios</a>
+                <a href="alumnos.html">  Alumnos  </a>
+                <a href="usuarios.html">  Usuarios  </a>
               `;
           }
           this.ul.innerHTML += html;
